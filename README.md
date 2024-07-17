@@ -2,7 +2,7 @@ FUN is a simple, structured, dynamic, functional and high-level programming lang
 
 FUN's syntax is simple and clear. It contains expressions and declerations.
 
-```
+```scala
 abstract class Exp 
 abstract class BExp 
 abstract class Decl
@@ -43,7 +43,7 @@ I call the K‐language. K‐values are the atomic operations that can be on the
 side of equal‐signs. The K‐language is restricted such that it is easy to generate the 
 SSA format for the LLVM‐IR.
 
-```
+```scala
 // K-language (K-expressions , K-values)
 abstract class KExp
 abstract class KVal
@@ -76,7 +76,7 @@ The 6 simple FUN programs include:
 
 To install ammonite repl:
 
-```
+```zsh
 // Linux
 $ curl -L https://github.com/lihaoyi/ammonite/releases/download/3.0.0-M2/2.13-3.0.
 0-M2-bootstrap > amm && chmod +x amm
@@ -86,7 +86,7 @@ $ brew install ammonite-repl
 ```
 
 To run the compiler:
-```
+```zsh
 $ amm fun_llvm.sc run fact.fun
 $ amm fun_llvm.sc run mand.fun
 ```
