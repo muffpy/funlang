@@ -66,6 +66,8 @@ developed. They use functions (“continuations”) to represent what is coming 
 sequence of instructions. Continuations are functions of type KVal to KExp. They can be 
 seen as a sequence of KLets where there is a “hole” that needs to be filled.
 
+## Build
+
 The 6 simple FUN programs include:
 - defs.fun
 - fact.fun
