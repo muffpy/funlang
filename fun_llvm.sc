@@ -11,11 +11,9 @@
 // Types of expressions (function and local variables)
 // and global variables are determined using a typing environment
 // initialised before the compilation phase and type safety is verified
-// during compilation using the typing rules given in the Coursework 5 question paper
 
 
-
-// Tokenizer and Parser from previous courseworks modified for the Fun language
+// Tokenizer and Parser modified for the Fun language
 import $file.fun_tokens, fun_tokens._
 import $file.fun_parser, fun_parser._ 
 
