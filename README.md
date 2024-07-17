@@ -27,7 +27,9 @@ case class Main(e: Exp) extends Decl
 The `fun_llvm.sc` compiler targets the LLVM Intermediate Language, or LLVM Intermediate
 Representation (short LLVM‐IR). LLVM-IR will also allow us to benefit from the modular 
 structure of the LLVM compiler and let for example the compiler generate code for 
-different CPUs, like X86 or ARM. LLVM‐IR allows compilation of multiple source languages to multiple targets. It is also the place where most of the target independent optimisations are performed.
+different CPUs, like X86 or ARM. LLVM‐IR allows compilation of multiple source 
+languages to multiple targets. It is also the place where most of the target 
+independent optimisations are performed.
 
 However, what we have to do for LLVM is to generate code in Static Single-Assignment 
 format (short SSA), because that is what the LLVM‐IR expects from us. The main idea 
