@@ -2,7 +2,7 @@ FUN is a simple, structured, dynamic, functional and high-level programming lang
 
 FUN's syntax is simple and clear. It contains expressions and declerations.
 
-```scala
+```
 abstract class Exp 
 abstract class BExp 
 abstract class Decl
@@ -23,4 +23,9 @@ case class Def(name: String,
 case class Main(e: Exp) extends Decl
 ```
 
-The `fun_llvm.sc` compiler targets the LLVM Intermediate Language, or LLVM Intermediate Representation (short LLVM‐IR). It will also allow us to benefit from the modular structure of the LLVM compiler and let for example the compiler gen‐ erate code for different CPUs, like X86 or ARM. That means we can be agnostic about where our code actually runs. We can also be ignorant about optimising code and allocating memory efficiently.
+The `fun_llvm.sc` compiler targets the LLVM Intermediate Language, or LLVM Intermediate
+Representation (short LLVM‐IR). It will also allow us to benefit from the modular 
+structure of the LLVM compiler and let for example the compiler gen‐ erate code for 
+different CPUs, like X86 or ARM. That means we can be agnostic about where our code 
+actually runs. We can also be ignorant about optimising code and allocating memory 
+efficiently.
